@@ -1,5 +1,5 @@
 const getPackageName = () => {
-    console.log("this is common package");
+    console.log("this is common package test");
 }
 
 export {
