@@ -9,19 +9,3 @@ See [Conventional Commits](https://conventionalcommits.org) for commit guideline
 ### Features
 
 * **common:** update common package ([26dab85](https://github.com/ashwinkumar6/lerna-poc/commit/26dab85252c7c9f4a135c7786b7c722928859d33))
-
-
-
-
-
-## [1.0.2](https://github.com/ashwinkumar6/lerna-poc/compare/v1.0.1...v1.0.2) (2022-08-08)
-
-**Note:** Version bump only for package @lerna-poc/common
-
-
-
-
-
-## 1.0.1 (2022-08-08)
-
-**Note:** Version bump only for package @lerna-poc/common
