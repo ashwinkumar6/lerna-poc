@@ -1,16 +1,24 @@
 {
-  "private": true,
+  "name": "lerna-poc",
   "workspaces": [
     "packages/*"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ashwinkumar6/lerna-poc.git"
+  },  
   "scripts": {
     "test": "lerna run test",
-    "new-version": "lerna version --conventional-commits --yes",
+    "new-version": "lerna version --no-private --conventional-commits --create-release github --yes",
+    "publish": "lerna publish --no-private --conventional-commits --create-release github --yes",
     "diff": "lerna diff"
   },
-  "devDependencies": {
-    "learna": "^1.0.1",
-    "lerna": "^5.3.0"
+  "devDependencies": {},
+  "dependencies": {
+    "lerna": "^3.13.1"
   },
-  "name": "lerna-poc"
+  "publishConfig":{
+    "registry": "https://npm.pkg.github.com/@ashwinkumar6",
+    "access": "public"
+  }
 }

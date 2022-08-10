@@ -1,0 +1,10 @@
+{
+  "name": "@lerna-poc/utils",
+  "version": "1.14.2",
+  "main": "index.js",
+  "license": "MIT",
+  "type": "module",
+  "scripts": {
+    "test": "echo testing utils package"
+  }
+}
