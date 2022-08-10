@@ -18,6 +18,7 @@
     "lerna": "^3.13.1"
   },
   "publishConfig":{
-    "registry": "https://npm.pkg.github.com/@ashwinkumar6"
+    "registry": "https://npm.pkg.github.com/@ashwinkumar6",
+    "access": "public"
   }
 }
