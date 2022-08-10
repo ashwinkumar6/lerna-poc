@@ -4,9 +4,6 @@
   "main": "index.js",
   "license": "MIT",
   "type": "module",
-  "dependencies": {
-    "@lerna-poc/common": "^1.6.0"
-  },
   "scripts": {
     "test": "echo testing utils package"
   }
