@@ -1,5 +1,5 @@
 const getPackageName = () => {
-    console.log("uitls package updated");
+    console.log("uitls package");
 }
 
 export {
