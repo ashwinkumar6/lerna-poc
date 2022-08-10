@@ -8,9 +8,9 @@
     "new-version": "lerna version --no-private --conventional-commits --create-release github --yes",
     "diff": "lerna diff"
   },
-  "devDependencies": {
-    "learna": "^1.0.1",
-    "lerna": "^5.3.0"
-  },
-  "name": "lerna-poc"
+  "devDependencies": {},
+  "name": "lerna-poc",
+  "dependencies": {
+    "lerna": "^3.13.1"
+  }
 }
