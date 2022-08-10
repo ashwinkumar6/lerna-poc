@@ -1,3 +1,6 @@
-import { getPackageName } from '@lerna-poc/common';
+import { getPackageName as commonPackage } from '@lerna-poc/common';
+import { getPackageName as utilsPackage } from '@lerna-poc/utils';
 
-getPackageName();
+console.log("hit");
+commonPackage();
+utilsPackage();
