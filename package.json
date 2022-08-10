@@ -1,4 +1,5 @@
 {
+  "name": "lerna-poc",
   "workspaces": [
     "packages/*"
   ],
@@ -13,7 +14,6 @@
     "diff": "lerna diff"
   },
   "devDependencies": {},
-  "name": "lerna-poc",
   "dependencies": {
     "lerna": "^3.13.1"
   },
