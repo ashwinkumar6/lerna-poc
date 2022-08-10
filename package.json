@@ -13,8 +13,5 @@
   "name": "lerna-poc",
   "dependencies": {
     "lerna": "^3.13.1"
-  },
-  "publishConfig":{
-    "registry": "https://npm.pkg.github.com/@ashwinkumar6"
   }
 }
