@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.15.0](https://github.com/ashwinkumar6/lerna-poc/compare/v1.14.2...v1.15.0) (2022-08-10)
+
+
+### Features
+
+* update multiple packages ([9f20d04](https://github.com/ashwinkumar6/lerna-poc/commit/9f20d0447dbd81039ef769102d3ad97e1fd81851))
+
+
+
+
+
 # [1.6.0](https://github.com/ashwinkumar6/lerna-poc/compare/v1.5.0...v1.6.0) (2022-08-10)
 
 
