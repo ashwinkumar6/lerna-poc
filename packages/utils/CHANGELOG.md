@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.18.0](https://github.com/ashwinkumar6/lerna-poc/compare/v1.17.0...v1.18.0) (2023-06-20)
+
+
+### Features
+
+* **utils:** update utils package ([e0c3de4](https://github.com/ashwinkumar6/lerna-poc/commit/e0c3de45a319fa5aa469003edd3252dfa8817d2e))
+
+
+
+
+
 ## [1.14.3](https://github.com/ashwinkumar6/lerna-poc/compare/v1.14.2...v1.14.3) (2023-06-20)
 
 **Note:** Version bump only for package @lerna-poc/utils
