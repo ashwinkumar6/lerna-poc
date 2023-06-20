@@ -16,7 +16,7 @@
     "lerna": "6.6.1"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ashwinkumar6",
+    "registry": "https://registry.npmjs.org/~ashwinkumar2468",
     "access": "public"
   }
 }
