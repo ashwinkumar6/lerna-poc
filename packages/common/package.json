@@ -4,8 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "type": "module",
+  "private": false,
   "scripts": {
     "test": "echo testing common package"
   },
-  "gitHead": "204b237b6dfb672f6e3a236e69df6e21cf13dd1c"
+  "gitHead": "f45c4c8f31f381bbc922df314c8ea914e3918081"
 }
