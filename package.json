@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "dependencies": {
-    "lerna": "3.13.1"
+    "lerna": "6.6.1"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@ashwinkumar6",
