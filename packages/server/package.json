@@ -9,5 +9,6 @@
   },
   "scripts": {
     "test": "echo testing server package"
-  }
+  },
+  "gitHead": "4ca469978a28642b0d2b518bbe32664793c648b4"
 }
