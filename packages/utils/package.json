@@ -7,10 +7,5 @@
   "scripts": {
     "test": "echo testing utils package"
   },
-  "private": false,
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
-    "access": "public"
-  },
-  "gitHead": "e1d8a226b070fe4626e5aded58b1dfdf7a80182c"
+  "gitHead": "66afec04f8d6d6fa1edc04eff9f1d8396381dd43"
 }

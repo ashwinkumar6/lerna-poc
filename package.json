@@ -9,7 +9,7 @@
     "new-version": "lerna version --conventional-commits --yes",
     "publish": "lerna publish",
     "new-version-release": "lerna version --conventional-commits --create-release github",
-    "new-version-release-publish": "lerna publish --no-private --conventional-commits --create-release github --yes --access public",
+    "new-version-release-publish": "lerna publish --no-private --conventional-commits --create-release github --yes",
     "diff": "lerna diff"
   },
   "devDependencies": {},
