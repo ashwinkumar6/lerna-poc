@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.24.0](https://github.com/ashwinkumar6/lerna-poc/compare/v1.23.0...v1.24.0) (2023-06-20)
+
+
+### Features
+
+* **common:** common package updated ([003e9f7](https://github.com/ashwinkumar6/lerna-poc/commit/003e9f7e588090c0ffffbbddec7de4b3368a8249))
+
+
+
+
+
 # [1.23.0](https://github.com/ashwinkumar6/lerna-poc/compare/v1.22.0...v1.23.0) (2023-06-20)
 
 
