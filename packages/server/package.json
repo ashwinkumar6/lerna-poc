@@ -6,7 +6,7 @@
   "type": "module",
   "private": false,
   "publishConfig": {
-    "registry": "https://registry.npmjs.org/",
+    "registry": "https://registry.npmjs.com/",
     "access": "public"
   },
   "dependencies": {
@@ -15,5 +15,5 @@
   "scripts": {
     "test": "echo testing server package"
   },
-  "gitHead": "98d4fc0f712e5eb1995ef59bdb94aba3cf185fe6"
+  "gitHead": "5d7cc8da34bdc4eddfa7845f621bf51acf845b0f"
 }
