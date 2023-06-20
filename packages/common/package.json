@@ -5,8 +5,12 @@
   "license": "MIT",
   "type": "module",
   "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
+  },
   "scripts": {
     "test": "echo testing common package"
   },
-  "gitHead": "26e11536ba8e062388c388d514ce6b405cfad4e2"
+  "gitHead": "098f7118d9dedab82dffb68fe7d96be92196480f"
 }
