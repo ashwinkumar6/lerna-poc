@@ -6,5 +6,10 @@
   "type": "module",
   "scripts": {
     "test": "echo testing utils package"
+  },
+  "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/",
+    "access": "public"
   }
 }
