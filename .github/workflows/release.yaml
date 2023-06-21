@@ -21,10 +21,11 @@ jobs:
         with:
           cmd: install # will run `yarn install` command
 
-      - name: create the release on github
-        uses: borales/actions-yarn@97ba8bebfe5b549bb7999261698a52a81fd62f1b
-        with:
-          cmd: new-version-release-publish # will run `yarn new-version-release-publish` command
-        env:
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      # - name: create the release on github
+      #   uses: borales/actions-yarn@97ba8bebfe5b549bb7999261698a52a81fd62f1b
+      #   with:
+      #     cmd: new-version-release-publish # will run `yarn new-version-release-publish` command
+      #   env:
+      #     GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      #     NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
