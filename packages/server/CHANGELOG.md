@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.26.4 (2023-06-21)
+
+
+### Bug Fixes
+
+* **actions:** test github actions ([a799474](https://github.com/ashwinkumar6/lerna-poc/commit/a7994743011c48bb991f6e362088a97848212c9e))
+
+
+
+
+
 ## 1.26.3 (2023-06-21)
 
 
