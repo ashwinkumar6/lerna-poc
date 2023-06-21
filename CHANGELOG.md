@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.26.1](https://github.com/ashwinkumar6/lerna-poc/compare/v1.26.0...v1.26.1) (2023-06-21)
+
+**Note:** Version bump only for package lerna-poc
+
+
+
+
+
 # [1.26.0](https://github.com/ashwinkumar6/lerna-poc/compare/v1.25.0...v1.26.0) (2023-06-20)
 
 
