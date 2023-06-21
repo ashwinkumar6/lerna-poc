@@ -17,7 +17,11 @@ jobs:
           node-version: 16.19
 
       - name: Run yarn install
-        run: yarn install
+        uses: borales/actions-yarn@97ba8bebfe5b549bb7999261698a52a81fd62f1b # v4.2.0 https://github.com/Borales/actions-yarn/commit/97ba8bebfe5b549bb7999261698a52a81fd62f1b
+        with:
+          cmd: install # will run `yarn install` command
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
 
       # - name: create the release on github
       #   uses: borales/actions-yarn@97ba8bebfe5b549bb7999261698a52a81fd62f1b
