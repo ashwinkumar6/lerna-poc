@@ -37,6 +37,7 @@ jobs:
 
       - run: |
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+          touch $BASH_ENV
           echo "export PREID_HASH_SUFFIX=$(echo $SHA1 | cut -c -7 | sed 's/^/\./')" >> "$BASH_ENV"
           source "$BASH_ENV"
           npm whoami
