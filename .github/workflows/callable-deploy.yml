@@ -4,7 +4,8 @@ on:
   workflow_call:
 
 env:
-  NPM_TOKEN: test
+  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+  GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   GITHUB_EMAIL: test@email.com
   GITHUB_USER: test-user
   BRANCH: test
@@ -16,6 +17,24 @@ jobs:
     name: "Publish to Amplify Package"
     runs-on: ubuntu-latest
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0 https://github.com/actions/checkout/commit/24cb9080177205b6e8c946b17badbe402adc938f
+
+      - name: Set Node.js 16.19
+        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0 https://github.com/actions/setup-node/commit/64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c
+        with:
+          node-version: 16.19
+
+      - name: Run yarn install
+        uses: borales/actions-yarn@97ba8bebfe5b549bb7999261698a52a81fd62f1b # v4.2.0 https://github.com/Borales/actions-yarn/commit/97ba8bebfe5b549bb7999261698a52a81fd62f1b
+        with:
+          cmd: install # will run `yarn install` command
+
+      - name: setup git
+        run: |
+          git config --global user.email "ashwinkumar2468@gmail.com"
+          git config --global user.name "ashwin kumar"
+
       - run: |
           echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
           echo "export PREID_HASH_SUFFIX=$(echo $SHA1 | cut -c -7 | sed 's/^/\./')" >> "$BASH_ENV"
