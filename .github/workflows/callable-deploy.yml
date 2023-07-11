@@ -1,0 +1,28 @@
+name: "Publish package to npm and create release on github"
+
+on:
+  workflow_call:
+
+env:
+  NPM_TOKEN: test
+  GITHUB_EMAIL: test@email.com
+  GITHUB_USER: test-user
+  BRANCH: test
+  SHA1: test-da39a3ee5e6b4b0d3255bfef95601890afd80709
+  BASH_ENV: ~/.bashrc
+
+jobs:
+  deploy:
+    name: "Publish to Amplify Package"
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+          echo "export PREID_HASH_SUFFIX=$(echo $SHA1 | cut -c -7 | sed 's/^/\./')" >> "$BASH_ENV"
+          source "$BASH_ENV"
+          npm whoami
+          git config --global user.email $GITHUB_EMAIL
+          git config --global user.name $GITHUB_USER
+          git status
+          git --no-pager diff
+          yarn publish:$BRANCH
