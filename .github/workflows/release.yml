@@ -30,7 +30,7 @@ jobs:
           git config --global user.name "ashwin kumar"
 
       - name: publish and release
-        uses: ./.github/workflows/callable-e2e-tests.yml
+        uses: ./.github/workflows/callable-deploy.yml
 
       # - name: create the release on github
       #   uses: borales/actions-yarn@97ba8bebfe5b549bb7999261698a52a81fd62f1b
