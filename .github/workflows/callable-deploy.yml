@@ -8,7 +8,7 @@ env:
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   GITHUB_EMAIL: test@email.com
   GITHUB_USER: test-user
-  BRANCH: main
+  BRANCH: release
   SHA1: test-da39a3ee5e6b4b0d3255bfef95601890afd80709
   BASH_ENV: .env
 
