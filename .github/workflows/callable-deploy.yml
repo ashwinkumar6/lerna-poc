@@ -4,7 +4,6 @@ on:
   workflow_call:
 
 env:
-  NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
   GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   GITHUB_EMAIL: test@email.com
   GITHUB_USER: test-user
@@ -36,9 +35,9 @@ jobs:
           git config --global user.name "ashwin kumar"
 
       - run: |
-          echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+          echo "//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}" >> ~/.npmrc
           touch $BASH_ENV
-          echo "export PREID_HASH_SUFFIX=$(echo $SHA1 | cut -c -7 | sed 's/^/\./')" >> "$BASH_ENV"
+          echo "export PREID_HASH_SUFFIX=$(echo ${{ github.sha }} | cut -c -7 | sed 's/^/\./')" >> "$BASH_ENV"
           source "$BASH_ENV"
           npm whoami
           git config --global user.email $GITHUB_EMAIL
