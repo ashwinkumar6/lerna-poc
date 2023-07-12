@@ -1,6 +1,6 @@
 {
   "name": "@lerna-poc/server",
-  "version": "1.28.0",
+  "version": "1.29.0",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
@@ -8,7 +8,7 @@
     "access": "public"
   },
   "dependencies": {
-    "@lerna-poc/common": "^1.28.0"
+    "@lerna-poc/common": "^1.29.0"
   },
   "scripts": {
     "test": "echo testing server package"

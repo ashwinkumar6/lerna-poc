@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# 1.29.0 (2023-07-12)
+
+
+### Features
+
+* **common:** updated ([31300ff](https://github.com/ashwinkumar6/lerna-poc/commit/31300ffdda1c9020ce6f7746d818971b9b27cc5e))
+
+
+
+
+
 # 1.28.0 (2023-07-12)
 
 
