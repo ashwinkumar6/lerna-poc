@@ -9,5 +9,5 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "environment secret: {{ secrets.NPM_TOKEN }}"
-          echo "environment variable: {{ env.ENVIRONMENT_NAME }}"
+          echo "environment secret: ${{ secrets.NPM_TOKEN }}"
+          echo "environment variable: ${{ env.ENVIRONMENT_NAME }}"
