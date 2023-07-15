@@ -1,11 +1,11 @@
 name: github release and npm publish
+
 on:
   push:
     branches:
       - "main"
 jobs:
   unit-test:
-    environment: release
     runs-on: ubuntu-latest
     steps:
       - run: |
