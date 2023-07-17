@@ -17,6 +17,7 @@ jobs:
         uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0
       - name: test token and env var
         run: |
+          ls .github/workflows 
           echo "environment secret: ${{ secrets.GENERAL_TOKEN }}"
           echo "environment variable: ${{ vars.GENERAL_ENVIRONMENT_NAME }}"
           echo "environment secret: ${{ secrets.TEST_TOKEN }}"
