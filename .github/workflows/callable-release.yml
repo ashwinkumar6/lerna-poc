@@ -1,17 +1,13 @@
-name: github workflow
+name: github release and npm publish
+
 on:
-  push:
-    branches:
-      - "main"
+  workflow_call:
 
 jobs:
-  e2e_test:
-    secrets: inherit
-    uses: ./.github/workflows/callable-e2e-tests-headless.yml
-
-  e2e_test_pre:
+  release:
+    environment:
+      name: release
     runs-on: ubuntu-latest
-    environment: general
     steps:
       - name: test token and env var
         run: |
@@ -19,5 +15,3 @@ jobs:
           echo "environment variable: ${{ vars.GENERAL_ENVIRONMENT_NAME }}"
           echo "environment secret: ${{ secrets.TEST_TOKEN }}"
           echo "environment variable: ${{ vars.ENVIRONMENT_NAME }}"
-      - name: release and publish
-        uses: ./.github/workflows/callable-e2e-tests-headless.yml
