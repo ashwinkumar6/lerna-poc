@@ -13,6 +13,8 @@ jobs:
     runs-on: ubuntu-latest
     environment: general
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0
       - name: test token and env var
         run: |
           echo "environment secret: ${{ secrets.GENERAL_TOKEN }}"
