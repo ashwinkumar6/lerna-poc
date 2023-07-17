@@ -21,3 +21,5 @@ jobs:
           echo "environment variable: ${{ vars.ENVIRONMENT_NAME }}"
       - name: release and publish
         uses: ./.github/workflows/callable-release.yml
+        with:
+          environment: general
