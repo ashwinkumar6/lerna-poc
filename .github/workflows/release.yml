@@ -7,7 +7,7 @@ on:
 jobs:
   e2e_test:
     secrets: inherit
-    uses: ./.github/workflows/callable-e2e-tests-headless.yml
+    uses: ./.github/workflows/callable-release.yml
 
   e2e_test_pre:
     runs-on: ubuntu-latest
@@ -20,4 +20,4 @@ jobs:
           echo "environment secret: ${{ secrets.TEST_TOKEN }}"
           echo "environment variable: ${{ vars.ENVIRONMENT_NAME }}"
       - name: release and publish
-        uses: ./.github/workflows/callable-e2e-tests-headless.yml
+        uses: ./.github/workflows/callable-release.yml
