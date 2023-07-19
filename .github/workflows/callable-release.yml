@@ -11,7 +11,6 @@ jobs:
     steps:
       - name: test token and env var
         run: |
-          echo "environment secret: ${{ secrets.GENERAL_TOKEN }}"
-          echo "environment variable: ${{ vars.GENERAL_ENVIRONMENT_NAME }}"
-          echo "environment secret: ${{ secrets.TEST_TOKEN }}"
-          echo "environment variable: ${{ vars.ENVIRONMENT_NAME }}"
+          echo "environment secret: ${{ github.event.repository.name }}"
+      # echo "environment secret: ${{ secrets.TEST_TOKEN }}"
+      # echo "environment variable: ${{ vars.ENVIRONMENT_NAME }}"
