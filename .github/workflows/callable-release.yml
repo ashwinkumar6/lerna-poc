@@ -2,6 +2,9 @@ name: github release and npm publish
 
 on:
   push:
+    branches:
+      - feat/github-actions/test-ashwinkumar6
+      # - feat/github-actions/test-${{ github.repository_owner }}
 
 jobs:
   release:
