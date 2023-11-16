@@ -1,5 +1,5 @@
 const getPackageName = () => {
-  console.log("common package updated here");
+  console.log("common package updated");
 };
 
 export { getPackageName };
