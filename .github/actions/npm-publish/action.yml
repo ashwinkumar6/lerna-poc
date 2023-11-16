@@ -34,9 +34,8 @@ runs:
         git config --global user.name $GITHUB_USER
 
     - name: Run npm publish
-      if: github.repository_owner == 'aws-amplify'
+      if: github.repository_owner == 'ashwinkumar6'
       shell: bash
-      working-directory: ./amplify-js
       env:
         NPM_TOKEN: ${{ inputs.npm_token }}
         GH_TOKEN: ${{ inputs.gh_token }}
