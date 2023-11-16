@@ -1,3 +1,8 @@
-import { getPackageName } from '@lerna-poc/common';
+import { commonPackage } from "@lerna-poc/common";
 
-getPackageName();
+const serverPackage = () => {
+  console.log("server package");
+};
+commonPackage();
+
+export { serverPackage };
