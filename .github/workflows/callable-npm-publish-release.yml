@@ -1,0 +1,60 @@
+name: Release to npm and update repository
+
+on: workflow_call
+
+jobs:
+  deploy:
+    name: Publish to Amplify Package
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@24cb9080177205b6e8c946b17badbe402adc938f # v3.4.0 https://github.com/actions/checkout/commit/24cb9080177205b6e8c946b17badbe402adc938f
+
+      - name: Set Node.js 16.19
+        uses: actions/setup-node@64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c # v3.6.0 https://github.com/actions/setup-node/commit/64ed1c7eab4cce3362f8c340dee64e5eaeef8f7c
+        with:
+          node-version: 16.19
+
+      - name: Run yarn install
+        uses: borales/actions-yarn@97ba8bebfe5b549bb7999261698a52a81fd62f1b # v4.2.0 https://github.com/Borales/actions-yarn/commit/97ba8bebfe5b549bb7999261698a52a81fd62f1b
+        with:
+            cmd: install # will run `yarn install` command
+  
+      - name: Run npm publish
+        uses: ./.github/actions/npm-publish
+        with:
+          target: release
+          npm_token: ${{ secrets.NPM_TOKEN }}
+          gh_token: ${{ secrets.GITHUB_TOKEN }}
+          github_user: test@email.com
+          github_email: test-user
+
+    #   - name: Set github commit user
+    #     env:
+    #       GITHUB_EMAIL: ${{ vars.GH_EMAIL }}
+    #       GITHUB_USER: ${{ vars.GH_USER }}
+    #     run: |
+    #       git config --global user.email $GITHUB_EMAIL
+    #       git config --global user.name $GITHUB_USER
+
+    #   - name: Update roll-back infrastructure
+    #     working-directory: ./amplify-js
+    #     run: |
+    #       git pull origin release
+    #       PUBLISH_COMMIT_HASH=$(git log -n 1 --pretty=format:"%H")
+    #       RELEASE_COMMIT_MESSAGE=$(git log -n 1 --skip 1 --pretty=oneline)
+    #       if [[ $RELEASE_COMMIT_MESSAGE = *release\(required\)* ]]; then git tag -f required-release $PUBLISH_COMMIT_HASH; fi
+
+    #   - name: Update API documentation
+    #     working-directory: ./amplify-js
+    #     run: |
+    #       yarn run docs
+    #       git add ./docs/api/
+    #       git commit -m "chore(release): update API docs [ci skip]"
+
+    #   - name: Push post release changes
+    #     working-directory: ./amplify-js
+    #     run: |
+    #       git push origin release
+    #       if [ $(git tag -l "required-release") ]; then git push -f origin required-release; fi
+    #       git push --force-with-lease origin release:main
