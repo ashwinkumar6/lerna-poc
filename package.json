@@ -11,9 +11,9 @@
     "new-version-release": "lerna version --conventional-commits --create-release github",
     "new-version-release-publish": "lerna publish --no-private --conventional-commits --create-release github --yes",
     "diff": "lerna diff",
-    "publish:main": "lerna publish --canary --force-publish \"*\" --yes --dist-tag=unstable --preid=unstable${PREID_HASH_SUFFIX} --exact --no-verify-access",
-    "publish:next": "lerna publish --canary --force-publish \"*\" --yes --dist-tag=next --preid=next${PREID_HASH_SUFFIX} --exact --no-verify-access",
-    "publish:release": "lerna publish --conventional-commits --create-release github --yes --message 'chore(release): Publish [ci skip]' --no-verify-access"
+		"publish:main": "lerna publish --canary --force-publish --dist-tag=unstable --preid=unstable${PREID_HASH_SUFFIX} --yes",
+		"publish:v5-stable": "lerna publish --conventional-commits --yes --dist-tag=stable-5 --message 'chore(release): Publish [ci skip]' --no-verify-access",
+    "publish:release": "lerna publish --conventional-commits --create-release github --dist-tag=v6 --message 'chore(release): Publish [ci skip]' --yes"
   },
   "devDependencies": {},
   "dependencies": {

@@ -1,0 +1,11 @@
+name: github release and npm publish
+
+on:
+  push:
+    branches:
+      - "main"
+      - "feat/github-actions/test-ashwinkumar6"
+jobs:
+  create-github-release:
+    secrets: inherit
+    uses: ./.github/workflows/callable-npm-publish-release.yml

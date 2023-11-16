@@ -3,6 +3,22 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.29.2 (2023-11-16)
+
+**Note:** Version bump only for package @lerna-poc/common
+
+
+
+
+
+## 1.29.1 (2023-11-16)
+
+**Note:** Version bump only for package @lerna-poc/common
+
+
+
+
+
 # 1.29.0 (2023-07-12)
 
 
