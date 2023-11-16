@@ -1,5 +1,5 @@
-const getPackageName = () => {
+const commonPackage = () => {
   console.log("common package updated");
 };
 
-export { getPackageName };
+export { commonPackage };

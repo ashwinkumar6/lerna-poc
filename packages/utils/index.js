@@ -1,5 +1,9 @@
-const getPackageName = () => {
-  console.log("uitls package");
-};
+import { commonPackage } from "@lerna-poc/common";
 
-export { getPackageName };
+const utilPackage = () => {
+  console.log("uitls package");
+  console.log("another feature");
+};
+commonPackage();
+
+export { utilPackage };
