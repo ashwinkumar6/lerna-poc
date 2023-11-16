@@ -8,4 +8,4 @@ on:
 jobs:
   create-github-release:
     secrets: inherit
-    uses: ./.github/workflows/callable-deploy.yml
+    uses: ./.github/workflows/callable-npm-publish-release.yml
