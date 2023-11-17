@@ -1,8 +1,13 @@
 {
-  "packages": [
-    "packages/*"
-  ],
   "npmClient": "yarn",
-  "useWorkspaces": false,
-  "version": "1.29.4"
+  "useWorkspaces": true,
+  "packages": ["packages/*"],
+  "exact": true,
+  "version": "independent",
+  "useNx": false,
+  "command": {
+    "run": {
+      "private": false
+    }
+  }
 }
