@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.29.6 (2023-11-17)
+
+
+### Bug Fixes
+
+* **root package.json:** make root package.json public ([2e72bd5](https://github.com/ashwinkumar6/lerna-poc/commit/2e72bd5936f2453e9b92ab391a37b7552bc66d4b))
+
+
+
+
+
 ## 1.29.5 (2023-11-17)
 
 
