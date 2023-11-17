@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 1.29.5 (2023-11-17)
+
+
+### Bug Fixes
+
+* **package.json:** add workspaces ([c56e7eb](https://github.com/ashwinkumar6/lerna-poc/commit/c56e7eba50c31b2b265b93c06a4f453fd73e1cf3))
+
+
+
+
+
 ## 1.29.4 (2023-11-16)
 
 **Note:** Version bump only for package @lerna-poc/server
