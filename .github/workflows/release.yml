@@ -3,8 +3,7 @@ name: github release and npm publish
 on:
   push:
     branches:
-      - "release"
-      - "main"
+      - dont-run
 jobs:
   create-github-release:
     secrets: inherit
