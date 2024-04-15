@@ -1,6 +1,6 @@
 {
   "name": "@lerna-poc/server",
-  "version": "1.33.1",
+  "version": "1.36.0",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
