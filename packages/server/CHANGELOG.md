@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+# [1.31.0](https://github.com/ashwinkumar6/lerna-poc/compare/@lerna-poc/server@1.30.0...@lerna-poc/server@1.31.0) (2024-04-15)
+
+
+### Features
+
+* lerna experimental tag2 ([d8b9a6f](https://github.com/ashwinkumar6/lerna-poc/commit/d8b9a6f495d78791592695d262f35a58679e5ac3))
+
+
+
+
+
 # [1.30.0](https://github.com/ashwinkumar6/lerna-poc/compare/@lerna-poc/server@1.29.5...@lerna-poc/server@1.30.0) (2024-04-15)
 
 
