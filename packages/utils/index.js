@@ -1,8 +1,8 @@
 import { commonPackage } from "@lerna-poc/common";
 
 const utilPackage = () => {
-  console.log("uitls package");
-  console.log("another feature");
+  console.log("uitls package - lerna experimental tag");
+  console.log("another feature - lerna experimental tag");
 };
 commonPackage();
 
