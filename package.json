@@ -14,7 +14,7 @@
     "publish:main": "lerna publish --canary --force-publish --dist-tag=unstable --preid=unstable${PREID_HASH_SUFFIX} --yes",
     "publish:v5-stable": "lerna publish --conventional-commits --yes --dist-tag=stable-5 --message 'chore(release): Publish [ci skip]' --no-verify-access",
     "publish:release": "lerna publish --conventional-commits --create-release github --dist-tag=v6 --message 'chore(release): Publish [ci skip]' --yes",
-    "publish:ashwin": "lerna publish --conventional-commits --dist-tag=experimental-lerna-test --message 'chore(release): Publish [ci skip]' --yes",
+    "publish:ashwin": "lerna publish --conventional-commits --dist-tag=experimental-lerna-test --message 'chore(release): Publish [ci skip]'",
     "test:size": "lerna run test:size --no-bail"
   },
   "devDependencies": {},
