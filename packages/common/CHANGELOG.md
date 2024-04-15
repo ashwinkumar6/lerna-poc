@@ -3,6 +3,14 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.33.1](https://github.com/ashwinkumar6/lerna-poc/compare/@lerna-poc/common@1.33.0...@lerna-poc/common@1.33.1) (2024-04-15)
+
+**Note:** Version bump only for package @lerna-poc/common
+
+
+
+
+
 # [1.32.0](https://github.com/ashwinkumar6/lerna-poc/compare/@lerna-poc/common@1.30.0...@lerna-poc/common@1.32.0) (2024-04-15)
 
 
