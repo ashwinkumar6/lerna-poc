@@ -1,11 +1,14 @@
 {
   "name": "@lerna-poc/utils",
-  "version": "1.37.1",
+  "version": "1.40.3",
   "main": "index.js",
   "license": "MIT",
   "type": "module",
   "publishConfig": {
     "access": "public"
+  },
+  "dependencies": {
+    "@lerna-poc/common": "1.40.1"
   },
   "scripts": {
     "test": "echo testing utils package"
